@@ -7,6 +7,19 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Datasets</title>
+                
+        
+          <description>&lt;p&gt;Here are some selected datasets commonly used in Machine Learning related tasks, for further automatical machine learning framework.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 05 Jun 2015 00:00:00 +0800</pubDate>
+        <link>/resource/2015/06/05/datasets.html</link>
+        <guid isPermaLink="true">/resource/2015/06/05/datasets.html</guid>
+      </item>
+    
+      <item>
         <title>Adapations and Variations of Word2vec</title>
                 
         
