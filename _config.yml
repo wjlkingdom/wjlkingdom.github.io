@@ -36,7 +36,7 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Resources
-    url: /categories/#resource
+    url: /categories/#resources
   - title: Papers
     url: /categories/#papers
   - title: NLP links
