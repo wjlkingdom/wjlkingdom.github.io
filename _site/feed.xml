@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description>Natural Language Processing, Machine learning, Deep learning</description>    
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>wjlkingdom.githu.io</link>
+    <atom:link href="wjlkingdom.githu.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Datasets</title>
@@ -15,8 +15,8 @@
 </description>
         
         <pubDate>Fri, 05 Jun 2015 00:00:00 +0800</pubDate>
-        <link>/resource/2015/06/05/datasets.html</link>
-        <guid isPermaLink="true">/resource/2015/06/05/datasets.html</guid>
+        <link>wjlkingdom.githu.io/resource/2015/06/05/datasets.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/resource/2015/06/05/datasets.html</guid>
       </item>
     
       <item>
@@ -28,8 +28,8 @@
 </description>
         
         <pubDate>Sat, 23 May 2015 00:00:00 +0800</pubDate>
-        <link>/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</link>
-        <guid isPermaLink="true">/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</guid>
+        <link>wjlkingdom.githu.io/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</guid>
       </item>
     
       <item>
@@ -41,8 +41,8 @@
 </description>
         
         <pubDate>Sun, 03 May 2015 00:00:00 +0800</pubDate>
-        <link>/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</link>
-        <guid isPermaLink="true">/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</guid>
+        <link>wjlkingdom.githu.io/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</guid>
       </item>
     
       <item>
@@ -54,8 +54,8 @@
 </description>
         
         <pubDate>Sat, 18 Apr 2015 00:00:00 +0800</pubDate>
-        <link>/papers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</link>
-        <guid isPermaLink="true">/papers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</guid>
+        <link>wjlkingdom.githu.io/papers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/papers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</guid>
       </item>
     
       <item>
@@ -129,8 +129,8 @@ networks?&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         
         <pubDate>Fri, 17 Apr 2015 00:00:00 +0800</pubDate>
-        <link>/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</link>
-        <guid isPermaLink="true">/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</guid>
+        <link>wjlkingdom.githu.io/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</guid>
       </item>
     
       <item>
@@ -215,8 +215,8 @@ communication cost, they may slow down convergence rate in practice. And Mu Li i
 </description>
         
         <pubDate>Sat, 11 Apr 2015 00:00:00 +0800</pubDate>
-        <link>/papers/2015/04/11/speed-of-mini-batch-sgd.html</link>
-        <guid isPermaLink="true">/papers/2015/04/11/speed-of-mini-batch-sgd.html</guid>
+        <link>wjlkingdom.githu.io/papers/2015/04/11/speed-of-mini-batch-sgd.html</link>
+        <guid isPermaLink="true">wjlkingdom.githu.io/papers/2015/04/11/speed-of-mini-batch-sgd.html</guid>
       </item>
     
   </channel>
