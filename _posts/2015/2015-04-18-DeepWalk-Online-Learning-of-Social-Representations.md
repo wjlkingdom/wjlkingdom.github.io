@@ -7,7 +7,7 @@ comments: true
 share: true
 
 category:
-- papars
+- papers
 
 tags:
 - deep learning
