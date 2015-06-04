@@ -7,7 +7,7 @@ share: true
 
 
 category:
-- PeppyPapers
+- papers
 tags:
 - paper
 - SGD

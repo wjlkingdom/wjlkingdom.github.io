@@ -16,14 +16,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Adapations and Variations of Word2vec">
 <meta property="og:description" content="word2vec 中考虑的是 linear 的 bag-of-words contexts。分三点来看：linear、bag-of-words、contexts。linear 强调的就是 plain，没有额外 word-level 以外的信息的，比如 syntax，比如 relation，比如 anything you can imagine；bag-of-words 强调的是 non-ordered，也就是说，词袋模型，这个 word2vec 是没有考虑语序的；第三个是 contexts，一方面是说，word2vec 只能考虑上下文信息（没有考虑词汇内部或者更高的 global/document-level 信息），另一方面是说，这个 contexts 也是被 window size 框住大小的，导致太大的 size computational cost 太大；太小的 size 又不能 handle 足够的信息，同时也会容易出现很多不想出现的词和想出现但没出现的词。">
-<meta property="og:url" content="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html">
+<meta property="og:url" content="/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html">
 <meta property="og:site_name" content="Maggie's KingDom">
 
 
 
 
 
-<link rel="canonical" href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html">
+<link rel="canonical" href="/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Maggie's KingDom Feed">
 
 
@@ -135,7 +135,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" rel="bookmark" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h1>
+          <h1 class="entry-title"><a href="/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" rel="bookmark" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h1>
         
         <h2>May 23, 2015</h2>
       </div><!-- /.header-title-wrap -->
@@ -219,14 +219,14 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 
       <footer class="entry-meta">
         <span class="entry-tags"><a href="/tags/#deep learning" title="Pages tagged deep learning" class="tag">deep learning</a><a href="/tags/#natural language processing" title="Pages tagged natural language processing" class="tag">natural language processing</a><a href="/tags/#representaion" title="Pages tagged representaion" class="tag">representaion</a><a href="/tags/#word2vec" title="Pages tagged word2vec" class="tag">word2vec</a><a href="/tags/#paper" title="Pages tagged paper" class="tag">paper</a></span>
-        <span><a href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" rel="bookmark" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a> was published on <span class="entry-date date published updated"><time datetime="2015-05-23T00:00:00+08:00">May 23, 2015</time></span></span>
+        <span><a href="/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" rel="bookmark" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a> was published on <span class="entry-date date published updated"><time datetime="2015-05-23T00:00:00+08:00">May 23, 2015</time></span></span>
         
         <span class="author vcard"><span class="fn"><a href="/about/" title="About Maggie">Maggie</a></span></span>
         <div class="social-share">
           <ul class="socialcount socialcount-small inline-list">
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
-            <li class="googleplus"><a href="https://plus.google.com/share?url=/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
           </ul>
         </div><!-- /.social-share -->
       </footer>
@@ -236,7 +236,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <div class="read-more">
       
         <div class="read-more-header">
-          <a href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" class="read-more-btn">Read More</a>
+          <a href="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" class="read-more-btn">Read More</a>
         </div><!-- /.read-more-header -->
         <div class="read-more-content">
           <h3><a href="/resource/2015/06/05/datasets.html" title="Datasets">Datasets</a></h3>
@@ -246,12 +246,12 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       <div class="read-more-list">
         
           <div class="list-item">
-            <h4><a href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a></h4>
+            <h4><a href="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a></h4>
             <span>Published on May 03, 2015</span>
           </div><!-- /.list-item -->
         
           <div class="list-item">
-            <h4><a href="/peppypapers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" title="DeepWalk Online Learning of Social Representations">DeepWalk Online Learning of Social Representations</a></h4>
+            <h4><a href="/papars/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" title="DeepWalk Online Learning of Social Representations">DeepWalk Online Learning of Social Representations</a></h4>
             <span>Published on April 18, 2015</span>
           </div><!-- /.list-item -->
         

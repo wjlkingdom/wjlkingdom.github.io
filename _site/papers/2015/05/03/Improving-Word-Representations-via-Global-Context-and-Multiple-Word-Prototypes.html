@@ -16,14 +16,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Improving Word Representations via Global Context and Multiple Word Prototypes">
 <meta property="og:description" content="本篇论文意在用全文信息辅助局部信息和多个词向量共同表示一个词的方法，增强语义。不止如此，在我看来，这篇论文最重要的地方有四个：首先的思想是 word disambiguation 在 context level；第二个是用 C&W 的 ranking loss 会比以前的 log-likelihood 训练速度快。第三个是把 local 和 global 的两种 score 设计成 NN 中的两个 part，分别用一层 hidden layer 学习。但是这里他们只用了简单的加法，而没有线性权重参数 $\alpha$。后人许多改进了 $\alpha$，还做了些参数对比展示实验结果。不过本质没区别。第四个是他们并没有直接用 SGD，二是用了 1000 的 mini-batch L-BFGS，这点好像追随的人不多。">
-<meta property="og:url" content="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html">
+<meta property="og:url" content="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html">
 <meta property="og:site_name" content="Maggie's KingDom">
 
 
 
 
 
-<link rel="canonical" href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html">
+<link rel="canonical" href="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Maggie's KingDom Feed">
 
 
@@ -135,7 +135,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" rel="bookmark" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a></h1>
+          <h1 class="entry-title"><a href="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" rel="bookmark" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a></h1>
         
         <h2>May 03, 2015</h2>
       </div><!-- /.header-title-wrap -->
@@ -177,14 +177,14 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 
       <footer class="entry-meta">
         <span class="entry-tags"><a href="/tags/#deep learning" title="Pages tagged deep learning" class="tag">deep learning</a><a href="/tags/#natural language processing" title="Pages tagged natural language processing" class="tag">natural language processing</a><a href="/tags/#representaion" title="Pages tagged representaion" class="tag">representaion</a><a href="/tags/#paper" title="Pages tagged paper" class="tag">paper</a></span>
-        <span><a href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" rel="bookmark" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a> was published on <span class="entry-date date published updated"><time datetime="2015-05-03T00:00:00+08:00">May 03, 2015</time></span></span>
+        <span><a href="/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" rel="bookmark" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a> was published on <span class="entry-date date published updated"><time datetime="2015-05-03T00:00:00+08:00">May 03, 2015</time></span></span>
         
         <span class="author vcard"><span class="fn"><a href="/about/" title="About Maggie">Maggie</a></span></span>
         <div class="social-share">
           <ul class="socialcount socialcount-small inline-list">
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
-            <li class="googleplus"><a href="https://plus.google.com/share?url=/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=/papers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
           </ul>
         </div><!-- /.social-share -->
       </footer>
@@ -194,7 +194,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <div class="read-more">
       
         <div class="read-more-header">
-          <a href="/peppypapers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" class="read-more-btn">Read More</a>
+          <a href="/papars/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" class="read-more-btn">Read More</a>
         </div><!-- /.read-more-header -->
         <div class="read-more-content">
           <h3><a href="/resource/2015/06/05/datasets.html" title="Datasets">Datasets</a></h3>
@@ -204,12 +204,12 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       <div class="read-more-list">
         
           <div class="list-item">
-            <h4><a href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h4>
+            <h4><a href="/papers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h4>
             <span>Published on May 23, 2015</span>
           </div><!-- /.list-item -->
         
           <div class="list-item">
-            <h4><a href="/peppypapers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" title="DeepWalk Online Learning of Social Representations">DeepWalk Online Learning of Social Representations</a></h4>
+            <h4><a href="/papars/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html" title="DeepWalk Online Learning of Social Representations">DeepWalk Online Learning of Social Representations</a></h4>
             <span>Published on April 18, 2015</span>
           </div><!-- /.list-item -->
         

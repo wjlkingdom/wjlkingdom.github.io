@@ -7,7 +7,7 @@ comments: true
 share: true
 
 category:
-- peppypapers
+- papars
 
 tags:
 - deep learning
