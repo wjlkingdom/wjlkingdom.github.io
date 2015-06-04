@@ -11,7 +11,7 @@ owner:
   name:           Maggie
   avatar:         avatar.jpg
   bio:            "COMP at PolyU"
-  email:          yanranli.summer@gmail.com
+  email:          wjlkingdom@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook: 
@@ -36,7 +36,7 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Resources
-    url: /categories/#resources
+    url: /categories/#resource
   - title: Papers
     url: /categories/#papers
   - title: NLP links
