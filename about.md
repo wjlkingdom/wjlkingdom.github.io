@@ -7,24 +7,13 @@ image:
   feature: bg_about.jpg
 ---
 
-I am **Yanran Li**, a Research Assistant now at PolyU (Hong Kong). 
+We are **NLPers** from COMP@PolyU (Hong Kong). 
 
-On this blog, I mostly write about Natural Language Processing, Deep Learning, Social Network Analysis, Applied Machine Learning and Optimization and issues with *R* language.
-
-I was an undergraduate from the Centre of Information Science, School of Electronics Engineering and Computer Science(EECS), Peking University. I work with [Prof. Sujian Li](http://www.icl.pku.edu.cn/member/lisujian/) and [Prof. Wenjie Li](http://www4.comp.polyu.edu.hk/~cswjli/). I also do some research at Microsoft as **Applied Researcher and Developer**.
-
-As I didn't want my about page to be a direct result of boredom, I concluded that the best way I can think of to describe myself is to list all of the things that make me happy. So in no particular order, here it goes: 
-
-**Books (mostly Literatures). Arts (I also paint). Running. Family & Friends. Traveling. A good Sunday sunshine. Hand lettering. Coffee. Dancing (I used to dance). Gardening (I'd like to be my career). The smell of fresh flowers.**
+On this blog, we mostly write about Natural Language Processing, Deep Learning, Social Network Analysis, Applied Machine Learning and Optimization and issues with *R* language.
 
 
 
 
-
-
-       
-
-                 
 
 > *It's morning. And morning is amazing. It's when we charge into the future. When we blasted off for the moon.*    
 *Scaled the highest peak. And flew for the very first time. Morning starts, and changes everything.*    
